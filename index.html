@@ -5,9 +5,13 @@
 <title>Text Input Control</title>
 </head>
 <body>
-<form>username:  <input type="text" name="username" />
+<span id="failed"></span>
+<form name="userform" action="x.htm">username:  <input type="text" name="username" />
 <br>
-password:  <input type="password "="password" />
+password:  <input type="password " name="password" />
+<input type="button" value="Submit" onClick="userAuthentication(this.form);">
 </form>
+<script type="text/javascript" src="../SalaryCal/js/userAuthentication.js"></script>
+
 </body>
 </html>

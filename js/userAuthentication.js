@@ -1,13 +1,12 @@
-function UserAuthentication(username, password) {  //to be edited
-    var theUsername = document.userform.username;
-    var thePassword = document.userform.password;
+function userAuthentication(form) {  //to be edited
+    var theUsername = form.username.value;
+    var thePassword = form.password.value;
 
     var userDetails = ['Olaitan Bakare', 'thisPassword'];
-    if(theUsername === userDetails[1] && thePassword === userDetails[2]){
+    if(theUsername === userDetails[0] && thePassword === userDetails[1]){
          return salaryCalculator.html; //to be edited
     }else{
-    	return 'wrong login details'
+    	document.getElementById('failed').innerHTML = "Please enter the correct user details"
     }
   }
 
-  function 
